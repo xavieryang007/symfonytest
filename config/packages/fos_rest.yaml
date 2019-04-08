@@ -1,0 +1,27 @@
+# Read the documentation: https://symfony.com/doc/master/bundles/FOSRestBundle/index.html
+fos_rest:
+    param_fetcher_listener:  true
+    allowed_methods_listener:  true
+    routing_loader: true
+    exception:
+        exception_controller: 'fos_rest.exception.controller:showAction'
+        enabled: true
+        codes:
+            \Doctrine\ORM\EntityNotFoundException: 404
+            \FOS\RestBundle\Exception\InvalidParameterException: 404
+            \Exception: 404
+            \App\Exception\LoginException: 404
+        messages:
+            \Doctrine\ORM\EntityNotFoundException: true
+            \FOS\RestBundle\Exception\InvalidParameterException: true
+            \Exception: true
+            \App\Exception\LoginException: true
+    format_listener:
+        rules:
+            - { path: ^/web, prefer_extension: true, fallback_format: json, priorities: [ html ] }
+            - { path: ^/admin, prefer_extension: true, fallback_format: json, priorities: [ json ] }
+            - { path: ^/api, prefer_extension: true, fallback_format: json, priorities: [ json ] }
+            - { path: ^/, prefer_extension: true, fallback_format: json, priorities: [ html ] }
+
+
+
