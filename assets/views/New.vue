@@ -14,7 +14,7 @@
                         filterable
                         allow-create
                         default-first-option
-                        placeholder="请选择文章标签">
+                        placeholder="Please select the article TAB">
                     <el-option
                             v-for="item in options5"
                             :key="item.value"

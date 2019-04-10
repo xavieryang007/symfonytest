@@ -9,12 +9,12 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class User
 {
     private $container;
-
+    
     public function __construct(ContainerInterface $container = null)
     {
         $this->container = $container;
     }
-
+    
     /**
      * check username and password with db
      * @param $username

@@ -17,12 +17,17 @@ class Auth
     private $uid;
     private $username;
     private $token;
-
+    
     public function setCacheService(FilesystemCache $cache)
     {
         $this->cache = $cache;
     }
-
+    
+    /**
+     * @param int|null $uid
+     * @param string|null $username
+     * @return string
+     */
     public function createToken(int $uid = null, string $username = null): string
     {
         $signer = new Sha256();
@@ -37,9 +42,13 @@ class Auth
             ->getToken();
         $this->cache->set($token . 'username', $username, $this->expire);
         $this->cache->set($token . 'uid', $uid, $this->expire);
-        return (String)$token;
+        return (string)$token;
     }
-
+    
+    /**
+     * @param string|null $token
+     * @return bool
+     */
     public function validateToken(string $token = null): bool
     {
         $username       = $this->cache->get($token . 'username');
@@ -47,29 +56,35 @@ class Auth
         $this->uid      = $uid;
         $this->username = $username;
         $this->token    = $token;
-        $token          = (new Parser())->parse((String)$token);
+        $token          = (new Parser())->parse((string)$token);
         $signer         = new Sha256();
         if (!$token->verify($signer, $this->salt)) {
             return false; //sign is wrong
         }
-
+        
         $validationData = new ValidationData();
         $validationData->setIssuer($username);
         $validationData->setAudience('http://127.0.0.1:8000');
         $validationData->setId('sxs-4f1g23a12aa');
         return $token->validate($validationData);
     }
-
+    
+    /**
+     * @return mixed
+     */
     public function getUid()
     {
         return $this->uid;
     }
-
+    
+    /**
+     * @return mixed
+     */
     public function getUsername()
     {
         return $this->username;
     }
-
+    
     public function loginOut()
     {
         $this->cache->set($this->token . 'username', null, $this->expire);

@@ -27,8 +27,8 @@ class UserController extends AdminBaseController
      * @var array
      */
     protected $noNeedLogin = ['/admin/login'];
-
-
+    
+    
     /**
      * @Rest\Post("/admin/login", name="login")
      */
@@ -46,7 +46,7 @@ class UserController extends AdminBaseController
         }
         return $this->error("retry");
     }
-
+    
     /**
      * @Rest\Get("/admin/loginout", name="loginout")
      */

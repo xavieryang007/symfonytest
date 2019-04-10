@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 class ArticleController extends AdminBaseController
 {
     protected $noNeedLogin = [];
-
+    
     /**
      * @Rest\Get("/admin/article/{page}/{offset}")
      * @param $page
@@ -32,7 +32,7 @@ class ArticleController extends AdminBaseController
         $lists          = $article->lists($data);
         return $this->success('get success', $lists);
     }
-
+    
     /**
      * @Rest\Get("/admin/article/{id}")
      * @param $id
@@ -44,7 +44,7 @@ class ArticleController extends AdminBaseController
         $data = $article->get($id);
         return $this->success('get success', $data);
     }
-
+    
     /**
      * @Rest\Post("/admin/article/")
      * @param Article $article
@@ -63,7 +63,7 @@ class ArticleController extends AdminBaseController
         }
         return $this->success('add success');
     }
-
+    
     /**
      * @Rest\Post("/admin/article/{id}")
      * @param $id
@@ -80,7 +80,7 @@ class ArticleController extends AdminBaseController
         $article->update($id, $data);
         return $this->success('update success');
     }
-
+    
     /**
      * @Rest\Delete("/admin/article/{id}")
      * @param $id
@@ -92,7 +92,7 @@ class ArticleController extends AdminBaseController
         $article->delete($id);
         return $this->success('delete success');
     }
-
+    
     /**
      * @Rest\Get("/admin/checkurl")
      * @param Article $article
@@ -107,7 +107,7 @@ class ArticleController extends AdminBaseController
         }
         return $this->error('has');
     }
-
+    
     /**
      * @Rest\Put("/admin/article/{id}")
      * @param $id

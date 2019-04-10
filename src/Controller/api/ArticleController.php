@@ -29,13 +29,13 @@ class ArticleController extends FOSRestController
         $data['time'] = date('M Y', $data['date']);
         return $this->success('success', $data);
     }
-
+    
     /**
      * @Rest\Get("/api/lists/{page}/{offset}")
      * @param $page
      * @param $offset
      * @param Article $article
-     * @return \Symfony\Component\HttpFoundation\JsonResponse|\Symfony\Component\HttpFoundation\Response
+     * @return JsonResponse|Response
      */
     public function lists($page, $offset, Article $article)
     {
@@ -44,14 +44,13 @@ class ArticleController extends FOSRestController
         $lists          = $article->lists($data);
         return $this->success('get success', $lists);
     }
-
-
+    
     /**
      * return json data with success
      * @param string $msg
      * @param array $data
      * @param int $code
-     * @return Response
+     * @return JsonResponse
      */
     protected function success(string $msg = "", $data = [], int $code = 200): JsonResponse
     {
@@ -62,13 +61,13 @@ class ArticleController extends FOSRestController
         ];
         return $this->json($return);
     }
-
+    
     /**
      * return json data when the system is error
      * @param string $msg
      * @param array $data
      * @param int $code
-     * @return Response
+     * @return JsonResponse
      */
     protected function error(string $msg = "", $data = [], int $code = 400): JsonResponse
     {
@@ -77,6 +76,6 @@ class ArticleController extends FOSRestController
             'data'     => $data,
             'code'     => $code,
         ];
-        return $this->json($return);
+        return $this->json($return, $code);
     }
 }
