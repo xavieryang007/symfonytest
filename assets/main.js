@@ -7,7 +7,10 @@ import ElementUI from 'element-ui';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-Vue.use(ElementUI);
+
+import locale from 'element-ui/lib/locale/lang/en'
+
+Vue.use(ElementUI, { locale })
 new Vue({
     el: '#app',
     template: '<App/>',

@@ -2,17 +2,10 @@ Github [https://github.com/xavieryang007/symfonytest](https://github.com/xaviery
     
     
 # Install
-
 ```shell
 composer install
 npm install
 ```
-copy the file .env.smaple and rename it ".env"
-
-```
-cp .env.sample .env
-```
-
 edit the .env file and add db url in it
 ```
 DATABASE_URL=mysql://user:password@127.0.0.1:3306/dbname

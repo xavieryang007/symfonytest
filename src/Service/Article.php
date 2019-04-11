@@ -2,6 +2,7 @@
 
 namespace App\Service;
 
+use App\Repository\ArticleRepository;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class Article
@@ -15,16 +16,15 @@ class Article
     
     /**
      * @param array $data
+     * @param ArticleRepository $articleRepository
      * @return bool
      */
-    public function add(array $data)
+    public function add(array $data, ArticleRepository $articleRepository)
     {
         $data['tags']   = implode(',', $data['tags']);
         $manager        = $this->container
             ->get('doctrine')->getManager();
-        $article_result = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article_result = $articleRepository
             ->findOneBy(['url' => $data['url']]);
         if ($article_result) {
             return false;
@@ -47,14 +47,12 @@ class Article
     
     /**
      * @param string $url
+     * @param ArticleRepository $articleRepository
      * @return bool
      */
-    public function checkUrl(string $url)
+    public function checkUrl(string $url, ArticleRepository $articleRepository)
     {
-        $Repository     = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article');
-        $article_result = $Repository
+        $article_result = $articleRepository
             ->findOneBy(['url' => $url]);
         if ($article_result) {
             return false;
@@ -65,15 +63,14 @@ class Article
     /**
      * @param int $id
      * @param array $data
+     * @param ArticleRepository $articleRepository
      */
-    public function update(int $id, array $data)
+    public function update(int $id, array $data, ArticleRepository $articleRepository)
     {
         $data['tags'] = implode(',', $data['tags']);
         $manager      = $this->container
             ->get('doctrine')->getManager();
-        $article      = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article      = $articleRepository
             ->find($id);
         $article->setUpdateTime(time());
         $article->setDate(time());
@@ -88,14 +85,13 @@ class Article
     
     /**
      * @param int $id
+     * @param ArticleRepository $articleRepository
      */
-    public function enable(int $id)
+    public function enable(int $id, ArticleRepository $articleRepository)
     {
         $manager = $this->container
             ->get('doctrine')->getManager();
-        $article = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article = $articleRepository
             ->find($id);
         $status  = $article->getStatus();
         $status  = $status == 1 ? 0 : 1;
@@ -106,14 +102,13 @@ class Article
     
     /**
      * @param int $id
+     * @param ArticleRepository $articleRepository
      */
-    public function delete(int $id)
+    public function delete(int $id, ArticleRepository $articleRepository)
     {
         $manager = $this->container
             ->get('doctrine')->getManager();
-        $article = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article = $articleRepository
             ->find($id);
         $article->setDeleteTime(time());
         $manager->persist($article);
@@ -122,13 +117,12 @@ class Article
     
     /**
      * @param int $id
+     * @param ArticleRepository $articleRepository
      * @return array
      */
-    public function get(int $id)
+    public function get(int $id, ArticleRepository $articleRepository)
     {
-        $article = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article = $articleRepository
             ->createQueryBuilder('p')
             ->where('p.id = :id and p.delete_time = :delete_time')
             ->setParameters(['id' => $id, 'delete_time' => 0])
@@ -146,16 +140,15 @@ class Article
     
     /**
      * @param array $data
+     * @param ArticleRepository $articleRepository
      * @return array
      */
-    public function lists(array $data)
+    public function lists(array $data, ArticleRepository $articleRepository)
     {
         $page    = $data['limit'];
         $offset  = $data['offset'];
         $page    = $page * $offset;
-        $article = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article = $articleRepository
             ->createQueryBuilder('p')
             ->where('p.delete_time = :delete_time')
             ->setParameters(['delete_time' => 0])
@@ -196,13 +189,12 @@ class Article
     
     /**
      * @param string $url
+     * @param ArticleRepository $articleRepository
      * @return array
      */
-    public function getDataByUrl(string $url)
+    public function getDataByUrl(string $url, ArticleRepository $articleRepository)
     {
-        $article = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article = $articleRepository
             ->createQueryBuilder('p')
             ->where('p.url = :url and p.delete_time = :delete_time')
             ->setParameters(['url' => $url, 'delete_time' => 0])
@@ -221,14 +213,13 @@ class Article
     
     /**
      * @param int $id
+     * @param ArticleRepository $articleRepository
      */
-    public function rateInc(int $id)
+    public function rateInc(int $id, ArticleRepository $articleRepository)
     {
         $manager = $this->container
             ->get('doctrine')->getManager();
-        $article = $this->container
-            ->get('doctrine')
-            ->getRepository('App:Article')
+        $article = $articleRepository
             ->find($id);
         $rate    = $article->getRate();
         $rate++;

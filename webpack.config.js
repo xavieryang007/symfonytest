@@ -1,6 +1,6 @@
 var Encore = require('@symfony/webpack-encore');
 Encore
-    .configureRuntimeEnvironment('dev-server', {
+    .configureRuntimeEnvironment('build', {
         keepPublicPath: true,
         https: true,
     })

@@ -4,29 +4,21 @@
 namespace App\Service;
 
 
+use App\Repository\UserRepository;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class User
 {
-    private $container;
-    
-    public function __construct(ContainerInterface $container = null)
-    {
-        $this->container = $container;
-    }
-    
     /**
-     * check username and password with db
      * @param $username
      * @param $password
-     * @return bool
+     * @param UserRepository $userRepository
+     * @return \App\Entity\User|bool|null
      */
-    public function checkLogin($username, $password)
+    public function checkLogin($username, $password, UserRepository $userRepository)
     {
         $password = md5($password);
-        $user     = $this->container
-            ->get('doctrine')
-            ->getRepository('App:User')
+        $user     = $userRepository
             ->findOneBy(["username" => $username]);
         if (isset($user) && $user->getPassword() == $password) {
             return $user;

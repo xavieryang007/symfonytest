@@ -25,7 +25,7 @@ class AdminBaseController extends FOSRestController
     protected $auth;
     protected $noNeedLogin = [];
     protected $request = [];
-
+    
     /**
      * init Controller and check login
      * AdminBaseController constructor.
@@ -35,7 +35,7 @@ class AdminBaseController extends FOSRestController
     {
         $this->auth = $auth;
         $this->auth->setCacheService(new FilesystemCache());
-
+        
         $request   = Request::createFromGlobals();
         $token     = $request->headers->get('token', $request->query->get('token', $request->cookies->get('token')));
         $mustLogin = $this->checkNoLogin($request);
@@ -43,7 +43,7 @@ class AdminBaseController extends FOSRestController
             //You should login fist
             throw  new LoginException("You should login fist");
         }
-
+        
         if (!empty($token)) {
             $auth_result = $this->auth->validateToken($token);
             if (!$auth_result) {
@@ -52,7 +52,7 @@ class AdminBaseController extends FOSRestController
             }
         }
     }
-
+    
     /**
      * check the request path
      * @param Request $request
@@ -66,7 +66,7 @@ class AdminBaseController extends FOSRestController
         }
         if (is_array($this->noNeedLogin)) {
             foreach ($this->noNeedLogin as $one) {
-                if (strpos($method,$one)!==false||strpos($one,$method)!==false){
+                if (strpos($method, $one) !== false || strpos($one, $method) !== false) {
                     return true;
                 }
             }
@@ -76,7 +76,7 @@ class AdminBaseController extends FOSRestController
         }
         return false;
     }
-
+    
     /**
      * return json data with success
      * @param string $msg
@@ -93,7 +93,7 @@ class AdminBaseController extends FOSRestController
         ];
         return $this->json($return);
     }
-
+    
     /**
      * return json data when the system is error
      * @param string $msg
@@ -110,5 +110,5 @@ class AdminBaseController extends FOSRestController
         ];
         return $this->json($return);
     }
-
+    
 }

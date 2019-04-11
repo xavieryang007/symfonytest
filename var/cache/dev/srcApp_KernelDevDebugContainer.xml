@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/mnt/e/code/php/symfony4_demo/src</parameter>
-    <parameter key="kernel.project_dir">/mnt/e/code/php/symfony4_demo</parameter>
+    <parameter key="kernel.root_dir">E:\code\PHP\symfony4_demo\src</parameter>
+    <parameter key="kernel.project_dir">E:\code\PHP\symfony4_demo</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">src</parameter>
-    <parameter key="kernel.cache_dir">/mnt/e/code/php/symfony4_demo/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/mnt/e/code/php/symfony4_demo/var/log</parameter>
+    <parameter key="kernel.cache_dir">E:\code\PHP\symfony4_demo\var\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">E:\code\PHP\symfony4_demo\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FOSRestBundle">FOS\RestBundle\FOSRestBundle</parameter>
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
@@ -25,55 +25,55 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FOSRestBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/friendsofsymfony/rest-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\friendsofsymfony\rest-bundle</parameter>
         <parameter key="namespace">FOS\RestBundle</parameter>
       </parameter>
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/symfony/framework-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="WebServerBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/symfony/web-server-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\symfony\web-server-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/sensio/framework-extra-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\sensio\framework-extra-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="JMSSerializerBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/jms/serializer-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\jms\serializer-bundle</parameter>
         <parameter key="namespace">JMS\SerializerBundle</parameter>
       </parameter>
       <parameter key="NelmioApiDocBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/nelmio/api-doc-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\nelmio\api-doc-bundle</parameter>
         <parameter key="namespace">Nelmio\ApiDocBundle</parameter>
       </parameter>
       <parameter key="DoctrineCacheBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-cache-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-cache-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineCacheBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\symfony\maker-bundle\src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="DoctrineFixturesBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-fixtures-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-fixtures-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\FixturesBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/symfony/twig-bundle</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebpackEncoreBundle" type="collection">
-        <parameter key="path">/mnt/e/code/php/symfony4_demo/vendor/symfony/webpack-encore-bundle/src</parameter>
+        <parameter key="path">E:\code\PHP\symfony4_demo\vendor\symfony\webpack-encore-bundle\src</parameter>
         <parameter key="namespace">Symfony\WebpackEncoreBundle</parameter>
       </parameter>
     </parameter>
@@ -81,7 +81,6 @@
     <parameter key="kernel.container_class">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="container.dumper.inline_class_loader">true</parameter>
     <parameter key="env(DATABASE_URL)"></parameter>
-    <parameter key="fos_rest.format_listener.rules">null</parameter>
     <parameter key="fragment.renderer.hinclude.global_template">null</parameter>
     <parameter key="fragment.path">/_fragment</parameter>
     <parameter key="kernel.secret">%env(APP_SECRET)%</parameter>
@@ -98,7 +97,7 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/mnt/e/code/php/symfony4_demo/var/cache/dev/sessions</parameter>
+    <parameter key="session.save_path">E:\code\PHP\symfony4_demo\var\cache\dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
@@ -108,7 +107,7 @@
     </parameter>
     <parameter key="data_collector.templates" type="collection"/>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/mnt/e/code/php/symfony4_demo/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">E:\code\PHP\symfony4_demo\var\cache\dev/srcApp_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -116,7 +115,7 @@
     <parameter key="router.cache_class_prefix">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">/mnt/e/code/php/symfony4_demo/var/cache/dev/serialization.php</parameter>
+    <parameter key="serializer.mapping.cache.file">E:\code\PHP\symfony4_demo\var\cache\dev/serialization.php</parameter>
     <parameter key="serializer.mapping.cache.prefix"></parameter>
     <parameter key="nelmio_api_doc.areas" type="collection">
       <parameter>default</parameter>
@@ -228,9 +227,9 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/mnt/e/code/php/symfony4_demo/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">E:\code\PHP\symfony4_demo\var\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
-    <parameter key="doctrine_migrations.dir_name">/mnt/e/code/php/symfony4_demo/src/Migrations</parameter>
+    <parameter key="doctrine_migrations.dir_name">E:\code\PHP\symfony4_demo/src/Migrations</parameter>
     <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
     <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
     <parameter key="doctrine_migrations.column_name">version</parameter>
@@ -244,7 +243,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">/mnt/e/code/php/symfony4_demo/templates</parameter>
+    <parameter key="twig.default_path">E:\code\PHP\symfony4_demo/templates</parameter>
     <parameter key="console.command.ids" type="collection">
       <parameter>console.command.public_alias.doctrine_cache.contains_command</parameter>
       <parameter>console.command.public_alias.doctrine_cache.delete_command</parameter>
@@ -404,49 +403,6 @@
     <service id="fos_rest.serializer.form_error_normalizer" class="FOS\RestBundle\Serializer\Normalizer\FormErrorNormalizer" public="false">
       <tag name="serializer.normalizer" priority="-10"/>
     </service>
-    <service id="fos_rest.exception_listener" class="FOS\RestBundle\EventListener\ExceptionListener">
-      <tag name="kernel.event_subscriber"/>
-      <tag name="monolog.logger" channel="request"/>
-      <argument>fos_rest.exception.controller:showAction</argument>
-      <argument type="service" id="logger" on-invalid="null"/>
-    </service>
-    <service id="fos_rest.exception.controller" class="FOS\RestBundle\Controller\ExceptionController" public="true">
-      <argument type="service" id="fos_rest.view_handler.default"/>
-      <argument type="service" id="fos_rest.exception.codes_map"/>
-      <argument>true</argument>
-    </service>
-    <service id="fos_rest.exception.twig_controller" class="FOS\RestBundle\Controller\TwigExceptionController" public="true">
-      <argument type="service" id="fos_rest.view_handler.default"/>
-      <argument type="service" id="fos_rest.exception.codes_map"/>
-      <argument>true</argument>
-      <argument type="service" id="templating.engine.twig"/>
-    </service>
-    <service id="fos_rest.exception.codes_map" class="FOS\RestBundle\Util\ExceptionValueMap" public="false">
-      <argument type="collection">
-        <argument key="\Doctrine\ORM\EntityNotFoundException">404</argument>
-        <argument key="\FOS\RestBundle\Exception\InvalidParameterException">404</argument>
-        <argument key="\Exception">404</argument>
-        <argument key="\App\Exception\LoginException">404</argument>
-      </argument>
-    </service>
-    <service id="fos_rest.exception.messages_map" class="FOS\RestBundle\Util\ExceptionValueMap" public="false">
-      <argument type="collection">
-        <argument key="\Doctrine\ORM\EntityNotFoundException">true</argument>
-        <argument key="\FOS\RestBundle\Exception\InvalidParameterException">true</argument>
-        <argument key="\Exception">true</argument>
-        <argument key="\App\Exception\LoginException">true</argument>
-      </argument>
-    </service>
-    <service id="fos_rest.serializer.exception_normalizer.jms" class="FOS\RestBundle\Serializer\Normalizer\ExceptionHandler">
-      <tag name="jms_serializer.subscribing_handler"/>
-      <argument type="service" id="fos_rest.exception.messages_map"/>
-      <argument>true</argument>
-    </service>
-    <service id="fos_rest.serializer.exception_normalizer.symfony" class="FOS\RestBundle\Serializer\Normalizer\ExceptionNormalizer" public="false">
-      <tag name="serializer.normalizer" priority="-10"/>
-      <argument type="service" id="fos_rest.exception.messages_map"/>
-      <argument>true</argument>
-    </service>
     <service id="fos_rest.normalizer.camel_keys" class="FOS\RestBundle\Normalizer\CamelKeysNormalizer"/>
     <service id="fos_rest.normalizer.camel_keys_with_leading_underscore" class="FOS\RestBundle\Normalizer\CamelKeysNormalizerWithLeadingUnderscore"/>
     <service id="fos_rest.decoder.json" class="FOS\RestBundle\Decoder\JsonDecoder"/>
@@ -474,84 +430,6 @@
         <argument key="fos_rest.decoder.json" type="service" id="fos_rest.decoder.json"/>
         <argument key="fos_rest.decoder.xml" type="service" id="fos_rest.decoder.xml"/>
       </argument>
-    </service>
-    <service id="fos_rest.format_listener" class="FOS\RestBundle\EventListener\FormatListener">
-      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="34"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="fos_rest.format_negotiator"/>
-    </service>
-    <service id="fos_rest.format_negotiator" class="FOS\RestBundle\Negotiation\FormatNegotiator">
-      <argument type="service" id="request_stack"/>
-      <call method="add">
-        <argument type="service" id="fos_rest.request_matcher.4087d07de2576c38d85fe78307b2ea8ad4dbf4214a4bd4aca8d97f3773259ad85a40b148"/>
-        <argument type="collection">
-          <argument key="prefer_extension">2.0</argument>
-          <argument key="fallback_format">json</argument>
-          <argument key="priorities" type="collection">
-            <argument>html</argument>
-          </argument>
-          <argument key="methods">null</argument>
-          <argument key="attributes" type="collection"/>
-          <argument key="stop">false</argument>
-        </argument>
-      </call>
-      <call method="add">
-        <argument type="service" id="fos_rest.request_matcher.2432e83048427dc8f11b940a6bcff723487fb9f0d780232170a5c588f73bf33daf39191b"/>
-        <argument type="collection">
-          <argument key="prefer_extension">2.0</argument>
-          <argument key="fallback_format">json</argument>
-          <argument key="priorities" type="collection">
-            <argument>json</argument>
-          </argument>
-          <argument key="methods">null</argument>
-          <argument key="attributes" type="collection"/>
-          <argument key="stop">false</argument>
-        </argument>
-      </call>
-      <call method="add">
-        <argument type="service" id="fos_rest.request_matcher.2364365e6bb6bfd5cadeda231e59db9139fadac2b673beb794ba3c0068839a899dc3c386"/>
-        <argument type="collection">
-          <argument key="prefer_extension">2.0</argument>
-          <argument key="fallback_format">json</argument>
-          <argument key="priorities" type="collection">
-            <argument>json</argument>
-          </argument>
-          <argument key="methods">null</argument>
-          <argument key="attributes" type="collection"/>
-          <argument key="stop">false</argument>
-        </argument>
-      </call>
-      <call method="add">
-        <argument type="service" id="fos_rest.request_matcher.69e9d3fd562e0ecffc5bce0c68d3b7a673d187934b742bc76452558275bbd7611198d478"/>
-        <argument type="collection">
-          <argument key="prefer_extension">2.0</argument>
-          <argument key="fallback_format">json</argument>
-          <argument key="priorities" type="collection">
-            <argument>html</argument>
-          </argument>
-          <argument key="methods">null</argument>
-          <argument key="attributes" type="collection"/>
-          <argument key="stop">false</argument>
-        </argument>
-      </call>
-    </service>
-    <service id="fos_rest.format_request_matcher" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false" abstract="true"/>
-    <service id="fos_rest.param_fetcher_listener" class="FOS\RestBundle\EventListener\ParamFetcherListener">
-      <tag name="kernel.event_listener" event="kernel.controller" method="onKernelController" priority="5"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="fos_rest.request.param_fetcher"/>
-      <argument>false</argument>
-    </service>
-    <service id="fos_rest.allowed_methods_listener" class="FOS\RestBundle\EventListener\AllowedMethodsListener">
-      <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse"/>
-      <tag name="container.hot_path"/>
-      <argument type="service" id="fos_rest.allowed_methods_loader"/>
-    </service>
-    <service id="fos_rest.allowed_methods_loader" class="FOS\RestBundle\Response\AllowedMethodsLoader\AllowedMethodsRouterLoader" public="false">
-      <tag name="kernel.cache_warmer"/>
-      <argument type="service" id="router.default"/>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/fos_rest</argument>
-      <argument>true</argument>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -607,7 +485,7 @@
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate" public="true">
       <argument type="tagged" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <argument type="tagged" tag="kernel.cache_clearer"/>
@@ -616,9 +494,9 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>/mnt/e/code/php/symfony4_demo/src/Resources</argument>
+      <argument>E:\code\PHP\symfony4_demo\src/Resources</argument>
       <argument type="collection">
-        <argument>/mnt/e/code/php/symfony4_demo/src</argument>
+        <argument>E:\code\PHP\symfony4_demo\src</argument>
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -768,9 +646,9 @@
     </service>
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="true">
       <tag name="cache.pool"/>
-      <argument>7I3zcGL8Ki</argument>
+      <argument>JN2-0l67fb</argument>
       <argument>0</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -784,37 +662,37 @@
     </service>
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="true">
       <tag name="cache.pool"/>
-      <argument>6FAIQ0VBcT</argument>
+      <argument>mq4dAHBfrg</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
-      <argument>hQHF6X0JdF</argument>
+      <argument>GsPEzs6Iru</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
-      <argument>G4uYjVX2TH</argument>
+      <argument>94TPxhH5aD</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
-      <argument>wB2rm88fRK</argument>
+      <argument>ucMZAW2OPw</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -824,7 +702,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -853,7 +731,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -938,8 +816,8 @@
         <argument key="cache.webpack_encore" type="service" id="cache.webpack_encore" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
-    <service id=".1_NativeFileSessionHandler~dZ074qz" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/sessions</argument>
+    <service id=".1_NativeFileSessionHandler~wp9kprK" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/sessions</argument>
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <tag name="kernel.reset" method="save"/>
@@ -963,12 +841,12 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/sessions</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
-      <argument type="service" id=".1_NativeFileSessionHandler~dZ074qz"/>
+      <argument type="service" id=".1_NativeFileSessionHandler~wp9kprK"/>
     </service>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1011,7 +889,7 @@
       <argument></argument>
     </service>
     <service id="assets._version__default" class="Symfony\Component\Asset\VersionStrategy\JsonManifestVersionStrategy" public="false">
-      <argument>/mnt/e/code/php/symfony4_demo/public/build/manifest.json</argument>
+      <argument>E:\code\PHP\symfony4_demo/public/build/manifest.json</argument>
     </service>
     <service id="assets._default_package" class="Symfony\Component\Asset\PathPackage" public="false">
       <argument></argument>
@@ -1028,12 +906,12 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser" public="false"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev</argument>
     </service>
     <service id="templating.finder" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
       <argument type="service" id="kernel"/>
       <argument type="service" id="templating.filename_parser"/>
-      <argument>/mnt/e/code/php/symfony4_demo/src/Resources</argument>
+      <argument>E:\code\PHP\symfony4_demo\src/Resources</argument>
     </service>
     <service id="templating.cache_warmer.template_paths" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplatePathsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer" priority="20"/>
@@ -1105,44 +983,12 @@
         <argument>10</argument>
       </call>
       <call method="addListener">
-        <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="fos_rest.format_listener"/>
-          <argument>onKernelRequest</argument>
-        </argument>
-        <argument>34</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.controller</argument>
-        <argument type="collection">
-          <argument type="service" id="fos_rest.param_fetcher_listener"/>
-          <argument>onKernelController</argument>
-        </argument>
-        <argument>5</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.response</argument>
-        <argument type="collection">
-          <argument type="service" id="fos_rest.allowed_methods_listener"/>
-          <argument>onKernelResponse</argument>
-        </argument>
-        <argument>0</argument>
-      </call>
-      <call method="addListener">
         <argument>kernel.exception</argument>
         <argument type="collection">
           <argument type="service" id="http_exception_listener"/>
           <argument>onKernelException</argument>
         </argument>
         <argument>-2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>kernel.exception</argument>
-        <argument type="collection">
-          <argument type="service" id="fos_rest.exception_listener"/>
-          <argument>onKernelException</argument>
-        </argument>
-        <argument>-100</argument>
       </call>
       <call method="addListener">
         <argument>kernel.response</argument>
@@ -1234,14 +1080,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -1448,7 +1286,7 @@
       <argument type="service" id=".service_locator.MAfdX1A.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">/mnt/e/code/php/symfony4_demo/var/cache/dev</argument>
+        <argument key="cache_dir">E:\code\PHP\symfony4_demo\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -1490,7 +1328,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1516,12 +1354,12 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
-    <service id=".2_PhpArrayAdapter~D0DedRf" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/annotations.php</argument>
+    <service id=".2_PhpArrayAdapter~N75SsZu" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
-    <service id=".1_ArrayCache~D0DedRf" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+    <service id=".1_ArrayCache~N75SsZu" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -1536,7 +1374,7 @@
     <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\CachedReader" public="false">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
-      <argument type="service" id=".1_ArrayCache~D0DedRf"/>
+      <argument type="service" id=".1_ArrayCache~N75SsZu"/>
       <argument>true</argument>
       <property name="cacheProviderBackup" type="service" id="annotations.cache"/>
     </service>
@@ -1546,17 +1384,16 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/annotations.php</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
-      <argument type="service" id=".2_PhpArrayAdapter~D0DedRf"/>
+      <argument type="service" id=".2_PhpArrayAdapter~N75SsZu"/>
     </service>
     <service id="serializer" class="Symfony\Component\Serializer\Serializer" public="true">
       <argument type="collection">
         <argument type="service" id="fos_rest.serializer.form_error_normalizer"/>
-        <argument type="service" id="fos_rest.serializer.exception_normalizer.symfony"/>
         <argument type="service" id="serializer.normalizer.json_serializable"/>
         <argument type="service" id="serializer.normalizer.datetime"/>
         <argument type="service" id="serializer.normalizer.constraint_violation_list"/>
@@ -1614,10 +1451,10 @@
           </service>
         </argument>
       </argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/serialization.php</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/serialization.php</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1674,7 +1511,7 @@
     </service>
     <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
       <tag name="console.command" command="server:run"/>
-      <argument>/mnt/e/code/php/symfony4_demo/public</argument>
+      <argument>E:\code\PHP\symfony4_demo/public</argument>
       <argument>dev</argument>
       <call method="setName">
         <argument>server:run</argument>
@@ -1682,7 +1519,7 @@
     </service>
     <service id="web_server.command.server_start" class="Symfony\Bundle\WebServerBundle\Command\ServerStartCommand" public="false">
       <tag name="console.command" command="server:start"/>
-      <argument>/mnt/e/code/php/symfony4_demo/public</argument>
+      <argument>E:\code\PHP\symfony4_demo/public</argument>
       <argument>dev</argument>
       <call method="setName">
         <argument>server:start</argument>
@@ -1838,19 +1675,9 @@
       <argument type="service" id="debug.stopwatch"/>
     </service>
     <service id="jms_serializer.handler_registry" class="JMS\Serializer\Handler\LazyHandlerRegistry">
-      <argument type="service" id=".service_locator.QzFr9bW"/>
+      <argument type="service" id=".service_locator._hTQqso"/>
       <argument type="collection">
         <argument key="1" type="collection">
-          <argument key="Exception" type="collection">
-            <argument key="json" type="collection">
-              <argument>fos_rest.serializer.exception_normalizer.jms</argument>
-              <argument>serializeToJson</argument>
-            </argument>
-            <argument key="xml" type="collection">
-              <argument>fos_rest.serializer.exception_normalizer.jms</argument>
-              <argument>serializeToXml</argument>
-            </argument>
-          </argument>
           <argument key="ArrayCollection" type="collection">
             <argument key="json" type="collection">
               <argument>jms_serializer.array_collection_handler</argument>
@@ -2146,7 +1973,7 @@
     <service id="jms_serializer.datetime_handler" class="JMS\Serializer\Handler\DateHandler" public="false">
       <tag name="jms_serializer.subscribing_handler"/>
       <argument>Y-m-d\TH:i:sP</argument>
-      <argument>PRC</argument>
+      <argument>UTC</argument>
       <argument>true</argument>
     </service>
     <service id="jms_serializer.iterator_handler" class="JMS\Serializer\Handler\IteratorHandler" public="false">
@@ -2191,7 +2018,7 @@
       <argument>jms_serializer.metadata_driver</argument>
     </service>
     <service id="jms_serializer.metadata.cache.file_cache" class="Metadata\Cache\FileCache" public="false">
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/jms_serializer</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/jms_serializer</argument>
     </service>
     <service id="jms_serializer.metadata_factory" class="Metadata\MetadataFactory" public="false">
       <argument type="service" id="jms_serializer.metadata.lazy_loading_driver"/>
@@ -2368,7 +2195,7 @@
           <argument>default</argument>
           <argument type="collection">
             <argument key="path_patterns" type="collection">
-              <argument>^/api(?!/doc$)</argument>
+              <argument>^/apidoc(?!/doc$)</argument>
             </argument>
             <argument key="host_patterns" type="collection"/>
             <argument key="with_annotation">false</argument>
@@ -2696,7 +2523,7 @@
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/doctrine/orm/Proxies</argument>
+        <argument>E:\code\PHP\symfony4_demo\var\cache\dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -2726,7 +2553,7 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
-        <argument>/mnt/e/code/php/symfony4_demo/src/Entity</argument>
+        <argument>E:\code\PHP\symfony4_demo\src\Entity</argument>
       </argument>
     </service>
     <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
@@ -2737,17 +2564,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
-        <argument>sf_orm_default_17e48b64271c8cc6c2715318ca6dbc7994981fbdfbcca5403d9d32b5d249e608</argument>
+        <argument>sf_orm_default_a9f0c2fa2a4af793bab671382ccf2b21ab821e7fa65dbb23a5b454680a1bcd25</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
-        <argument>sf_orm_default_17e48b64271c8cc6c2715318ca6dbc7994981fbdfbcca5403d9d32b5d249e608</argument>
+        <argument>sf_orm_default_a9f0c2fa2a4af793bab671382ccf2b21ab821e7fa65dbb23a5b454680a1bcd25</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
-        <argument>sf_orm_default_17e48b64271c8cc6c2715318ca6dbc7994981fbdfbcca5403d9d32b5d249e608</argument>
+        <argument>sf_orm_default_a9f0c2fa2a4af793bab671382ccf2b21ab821e7fa65dbb23a5b454680a1bcd25</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver">
@@ -2804,7 +2631,7 @@
     <service id="maker.file_manager" class="Symfony\Bundle\MakerBundle\FileManager" public="false">
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder" public="false"/>
     <service id="maker.autoloader_util" class="Symfony\Bundle\MakerBundle\Util\AutoloaderUtil" public="false">
@@ -2860,7 +2687,7 @@
       <tag name="maker.command"/>
       <argument type="service" id="maker.file_manager"/>
       <argument type="service" id="maker.doctrine_helper"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
       <argument type="service" id="maker.generator"/>
     </service>
     <service id="maker.maker.make_fixtures" class="Symfony\Bundle\MakerBundle\Maker\MakeFixtures" public="false">
@@ -2910,7 +2737,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration" public="false">
       <tag name="maker.command"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
     </service>
     <service id="doctrine.fixtures_load_command" class="Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand">
       <tag name="console.command" command="doctrine:fixtures:load"/>
@@ -2933,7 +2760,7 @@
     <service id="twig" class="Twig\Environment" public="true">
       <argument type="service" id="twig.loader.filesystem"/>
       <argument type="collection">
-        <argument key="default_path">/mnt/e/code/php/symfony4_demo/templates</argument>
+        <argument key="default_path">E:\code\PHP\symfony4_demo/templates</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
         <argument key="exception_controller">twig.controller.exception::showAction</argument>
@@ -2941,7 +2768,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">/mnt/e/code/php/symfony4_demo/var/cache/dev/twig</argument>
+        <argument key="cache">E:\code\PHP\symfony4_demo\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -3023,9 +2850,9 @@
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>/mnt/e/code/php/symfony4_demo/src</argument>
+      <argument>E:\code\PHP\symfony4_demo\src</argument>
       <argument type="collection"/>
-      <argument>/mnt/e/code/php/symfony4_demo/templates</argument>
+      <argument>E:\code\PHP\symfony4_demo/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
@@ -3035,41 +2862,41 @@
     </service>
     <service id="twig.loader.native_filesystem" class="Symfony\Bundle\TwigBundle\Loader\NativeFilesystemLoader" public="false">
       <argument type="collection"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/nelmio/api-doc-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\nelmio\api-doc-bundle/Resources/views</argument>
         <argument>NelmioApiDoc</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/nelmio/api-doc-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\nelmio\api-doc-bundle/Resources/views</argument>
         <argument>!NelmioApiDoc</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/templates</argument>
+        <argument>E:\code\PHP\symfony4_demo/templates</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -3095,7 +2922,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -3158,41 +2985,41 @@
       <tag name="twig.loader"/>
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/nelmio/api-doc-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\nelmio\api-doc-bundle/Resources/views</argument>
         <argument>NelmioApiDoc</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/nelmio/api-doc-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\nelmio\api-doc-bundle/Resources/views</argument>
         <argument>!NelmioApiDoc</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>E:\code\PHP\symfony4_demo\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/mnt/e/code/php/symfony4_demo/templates</argument>
+        <argument>E:\code\PHP\symfony4_demo/templates</argument>
       </call>
     </service>
     <service id="templating.engine.twig" class="Symfony\Bundle\TwigBundle\TwigEngine" public="false">
@@ -3203,10 +3030,10 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
-      <argument>/mnt/e/code/php/symfony4_demo</argument>
+      <argument>E:\code\PHP\symfony4_demo</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/templates</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/src</argument>
+      <argument>E:\code\PHP\symfony4_demo/templates</argument>
+      <argument>E:\code\PHP\symfony4_demo\src</argument>
       <call method="setName">
         <argument>debug:twig</argument>
       </call>
@@ -3218,7 +3045,7 @@
         <argument>lint:twig</argument>
       </call>
     </service>
-    <service id=".1_ServiceLocator~8dBelog" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".1_ServiceLocator~X58z8e6" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="webpack_encore.entrypoint_lookup_collection" type="service" id="webpack_encore.entrypoint_lookup_collection"/>
@@ -3234,32 +3061,32 @@
     </service>
     <service id="webpack_encore.twig_entry_files_extension" class="Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension" public="false">
       <tag name="twig.extension"/>
-      <argument type="service" id=".1_ServiceLocator~8dBelog"/>
+      <argument type="service" id=".1_ServiceLocator~X58z8e6"/>
     </service>
     <service id="webpack_encore.entrypoint_lookup.cache_warmer" class="Symfony\WebpackEncoreBundle\CacheWarmer\EntrypointCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="collection">
-        <argument key="_default">/mnt/e/code/php/symfony4_demo/public/build/entrypoints.json</argument>
+        <argument key="_default">E:\code\PHP\symfony4_demo/public/build/entrypoints.json</argument>
       </argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/webpack_encore.cache.php</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/webpack_encore.cache.php</argument>
       <argument type="service" id="cache.webpack_encore"/>
     </service>
     <service id="webpack_encore.cache" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/webpack_encore.cache.php</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/webpack_encore.cache.php</argument>
       <argument type="service" id="cache.webpack_encore"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
     <service id="cache.webpack_encore" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
-      <argument>7tulVlHd8w</argument>
+      <argument>40omhv19wk</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/e/code/php/symfony4_demo/var/cache/dev/pools</argument>
+      <argument>E:\code\PHP\symfony4_demo\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="webpack_encore.entrypoint_lookup[_default]" class="Symfony\WebpackEncoreBundle\Asset\EntrypointLookup">
-      <argument>/mnt/e/code/php/symfony4_demo/public/build/entrypoints.json</argument>
+      <argument>E:\code\PHP\symfony4_demo/public/build/entrypoints.json</argument>
       <argument>null</argument>
       <argument>_default</argument>
     </service>
@@ -3449,34 +3276,6 @@
         <argument>make:migration</argument>
       </call>
     </service>
-    <service id="fos_rest.request_matcher.4087d07de2576c38d85fe78307b2ea8ad4dbf4214a4bd4aca8d97f3773259ad85a40b148" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/web</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument type="collection"/>
-    </service>
-    <service id="fos_rest.request_matcher.2432e83048427dc8f11b940a6bcff723487fb9f0d780232170a5c588f73bf33daf39191b" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/admin</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument type="collection"/>
-    </service>
-    <service id="fos_rest.request_matcher.2364365e6bb6bfd5cadeda231e59db9139fadac2b673beb794ba3c0068839a899dc3c386" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/api</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument type="collection"/>
-    </service>
-    <service id="fos_rest.request_matcher.69e9d3fd562e0ecffc5bce0c68d3b7a673d187934b742bc76452558275bbd7611198d478" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument>null</argument>
-      <argument type="collection"/>
-    </service>
     <service id="fos_rest.serializer.form_error_handler" class="FOS\RestBundle\Serializer\Normalizer\FormErrorHandler">
       <tag name="jms_serializer.subscribing_handler"/>
       <argument type="service" id="fos_rest.serializer.form_error_handler.inner"/>
@@ -3499,7 +3298,7 @@
         <argument key="user" type="service" id="App\Service\User"/>
       </argument>
     </service>
-    <service id=".service_locator.3YPZLCj" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.sb8iNuW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\admin\ArticleController::add" type="service" id=".service_locator.zMBWnHk"/>
@@ -3516,8 +3315,6 @@
         <argument key="App\Controller\api\ArticleController::lists" type="service" id=".service_locator.zMBWnHk"/>
         <argument key="App\Controller\api\ArticleController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Controller\web\AdminController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
-        <argument key="App\Controller\web\ArticleController::details" type="service" id=".service_locator.zMBWnHk"/>
-        <argument key="App\Controller\web\ArticleController::lists" type="service" id=".service_locator.zMBWnHk"/>
         <argument key="App\Controller\web\ArticleController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Lib\Controller\AdminBaseController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Controller\admin\ArticleController:add" type="service" id=".service_locator.zMBWnHk"/>
@@ -3534,8 +3331,6 @@
         <argument key="App\Controller\api\ArticleController:lists" type="service" id=".service_locator.zMBWnHk"/>
         <argument key="App\Controller\api\ArticleController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Controller\web\AdminController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
-        <argument key="App\Controller\web\ArticleController:details" type="service" id=".service_locator.zMBWnHk"/>
-        <argument key="App\Controller\web\ArticleController:lists" type="service" id=".service_locator.zMBWnHk"/>
         <argument key="App\Controller\web\ArticleController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Lib\Controller\AdminBaseController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
       </argument>
@@ -3665,7 +3460,7 @@
     <service id="debug.argument_resolver.request.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestValueResolver" public="false"/>
     <service id="debug.argument_resolver.session.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\SessionValueResolver" public="false"/>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.3YPZLCj"/>
+      <argument type="service" id=".service_locator.sb8iNuW"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
@@ -3806,10 +3601,9 @@
         <argument key="jms_serializer.stopwatch_subscriber" type="service" id="jms_serializer.stopwatch_subscriber"/>
       </argument>
     </service>
-    <service id=".service_locator.QzFr9bW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator._hTQqso" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="fos_rest.serializer.exception_normalizer.jms" type="service" id="fos_rest.serializer.exception_normalizer.jms"/>
         <argument key="fos_rest.serializer.form_error_handler" type="service" id="fos_rest.serializer.form_error_handler"/>
         <argument key="jms_serializer.array_collection_handler" type="service" id="jms_serializer.array_collection_handler"/>
         <argument key="jms_serializer.constraint_violation_handler" type="service" id="jms_serializer.constraint_violation_handler"/>
@@ -3914,13 +3708,13 @@
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupCollectionInterface" alias="webpack_encore.entrypoint_lookup_collection" public="false"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
     <service id="fos_rest.serializer" alias="fos_rest.serializer.jms"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.3YPZLCj"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.sb8iNuW"/>
     <service id="Symfony\Component\Templating\EngineInterface" alias="templating.engine.twig" public="false"/>
     <service id="Symfony\Bundle\FrameworkBundle\Templating\EngineInterface" alias="templating.engine.twig" public="false"/>
     <service id="twig.loader" alias="twig.loader.filesystem"/>
     <service id="Psr\Log\LoggerInterface" alias="logger" public="false"/>
     <service id=".service_locator.ueSc.AG" alias="nelmio_api_doc.generator_locator" public="false"/>
-    <service id=".service_locator.tSKDlY7" alias=".1_ServiceLocator~8dBelog" public="false"/>
+    <service id=".service_locator.tSKDlY7" alias=".1_ServiceLocator~X58z8e6" public="false"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher" public="true"/>
     <service id="controller_resolver" alias="debug.controller_resolver" public="false"/>
     <service id="argument_resolver" alias="debug.argument_resolver" public="false"/>
