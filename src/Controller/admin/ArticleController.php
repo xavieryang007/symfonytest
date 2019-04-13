@@ -112,7 +112,7 @@ class ArticleController extends AdminBaseController
      * @Rest\Put("/admin/article/{id}")
      * @param $id
      * @param Article $article
-     * @return JsonResponse|Response
+     * @return \Symfony\Component\HttpFoundation\JsonResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function enable($id, Article $article)
     {
