@@ -31,6 +31,9 @@ class UserController extends AdminBaseController
     
     /**
      * @Rest\Post("/admin/login", name="login")
+     * @param Request $request
+     * @param User $user
+     * @return \Symfony\Component\HttpFoundation\JsonResponse|Response
      */
     public function login(Request $request, User $user)
     {
